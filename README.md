@@ -15,8 +15,8 @@ This REST API uses the Spring reactive-stack and allows the management and explo
 
 The infrastructure is be created in OpenStack:
 
-- Net
-- Subnet
+- Network
+- Subnetwork
 - Router that connects the created network with the external network so that the instances have access from the outside.
 
 With `docker-machine` an instance is created that has an interface to the network created in Openstack. This instance acts as a swarm node (it will have both roles: manager node and node that executes containers) and must have a floating IP assigned
